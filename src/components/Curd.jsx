@@ -49,17 +49,17 @@ function Curd() {
                     <h2>Hey bub, ya gotta register!</h2>
                     <div className="form-control">
                         <label htmlFor="username">Name</label>
-                        <input type="text" name="name" onChange={ handelChange } value={ user.name || "" } placeholder="Enter name" />
+                        <input type="text" name="name" onChange={ handelChange } value={ user.name || "" } placeholder="Enter name" required/>
                         <small>Error message</small>
                     </div>
                     <div className="form-control">
                         <label htmlFor="email">Email</label>
-                        <input type="text" name="email" onChange={ handelChange } value={ user.email || "" } placeholder="Enter email" />
+                        <input type="text" name="email" onChange={ handelChange } value={ user.email || "" } placeholder="Enter email" required/>
                         <small>Error message</small>
                     </div>
                     <div className="form-control">
                         <label htmlFor="password">Phone</label>
-                        <input type="text" name="phone" onChange={ handelChange } value={ user.phone || "" } placeholder="Enter Phone" />
+                        <input type="text" name="phone" onChange={ handelChange } value={ user.phone || "" } placeholder="Enter Phone" required/>
                         <small>Error message</small>
                     </div>
                     <div className="form-control">
